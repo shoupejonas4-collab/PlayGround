@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#101117" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23d7ff4f'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial,sans-serif' font-size='20' font-weight='900' fill='%23101117'%3EUC27%3C/text%3E%3C/svg%3E" />
+  <title>Ultimate Cards 27 — Football Card Club</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Ultimate Cards home"><span class="brand-mark">UC<span>27</span></span><span class="brand-name">ULTIMATE<br><b>CARDS</b></span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <button class="nav-item active" data-view="home"><span>⌂</span> Home</button>
+        <button class="nav-item" data-view="packs"><span>▣</span> Packs</button>
+        <button class="nav-item" data-view="draft"><span>⚽</span> Draft</button>
+        <button class="nav-item" data-view="club"><span>♧</span> My Club</button>
+      </nav>
+      <div class="wallet"><span class="coin-icon">◆</span><strong id="coin-count">2,500</strong><button class="plus" id="earn-coins" aria-label="Earn coins">+</button></div>
+    </header>
+    <main id="main-content">
+      <section class="view active" id="view-home">
+        <div class="hero-panel">
+          <div class="hero-copy"><div class="eyebrow"><i></i> SEASON 27 · CLUB EDITION</div><h1>BUILD YOUR<br><em>LEGACY.</em></h1><p>Open packs. Find your stars. Create a squad worth remembering.</p><div class="hero-actions"><button class="button primary" data-goto="packs">OPEN A PACK <span>↗</span></button><button class="button ghost" data-goto="draft">START A DRAFT <span>→</span></button></div></div>
+          <div class="hero-art" aria-label="Featured football cards"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="hero-spark">✦</div><div class="featured-card card-gold"><div class="card-shine"></div><div class="card-rating">96</div><div class="card-position">ST</div><div class="card-face">⚡</div><div class="card-flag">🇫🇷</div><div class="card-name">MBAPPÉ</div><div class="card-club">✦ &nbsp; ◆ &nbsp; ⚽</div></div><div class="mini-card mini-left"><span>89</span><b>CM</b><i>✦</i></div><div class="mini-card mini-right"><span>92</span><b>RW</b><i>✦</i></div><div class="hero-tag">PLAYER<br><b>SPOTLIGHT</b></div></div>
+          <div class="hero-bottom"><span>01 — YOUR CLUB STARTS HERE</span><span>SCROLL TO EXPLORE ↓</span></div>
+        </div>
+        <div class="section-heading"><div><span class="eyebrow muted">YOUR JOURNEY</span><h2>CLUB OVERVIEW</h2></div><span class="season-badge">✦ &nbsp; SEASON 27</span></div>
+        <div class="stat-grid"><article class="stat-card"><span class="stat-icon violet">▣</span><div><small>PLAYERS COLLECTED</small><strong id="player-total">0</strong></div><span class="stat-arrow">↗</span></article><article class="stat-card"><span class="stat-icon lime">⚽</span><div><small>BEST SQUAD RATING</small><strong id="best-rating">—</strong></div><span class="stat-arrow">↗</span></article><article class="stat-card"><span class="stat-icon orange">✦</span><div><small>PACKS OPENED</small><strong id="pack-total">0</strong></div><span class="stat-arrow">↗</span></article></div>
+        <div class="section-heading feature-heading"><div><span class="eyebrow muted">PICK YOUR PLAY</span><h2>WHAT'S NEXT?</h2></div></div>
+        <div class="mode-grid"><button class="mode-card pack-mode" data-goto="packs"><span class="mode-number">01</span><span class="mode-icon">▣</span><span class="mode-title">PACKS</span><span class="mode-sub">Hunt for your next big star.</span><span class="mode-link">BROWSE PACKS ↗</span><span class="mode-watermark">✦</span></button><button class="mode-card draft-mode" data-goto="draft"><span class="mode-number">02</span><span class="mode-icon">⚽</span><span class="mode-title">SQUAD DRAFT</span><span class="mode-sub">Pick a team. Chase perfection.</span><span class="mode-link">START DRAFT ↗</span><span class="mode-watermark">⌁</span></button><button class="mode-card club-mode" data-goto="club"><span class="mode-number">03</span><span class="mode-icon">♧</span><span class="mode-title">MY CLUB</span><span class="mode-sub">Every player has a story.</span><span class="mode-link">VIEW COLLECTION ↗</span><span class="mode-watermark">✧</span></button></div>
+        <footer class="footer"><span>ULTIMATE CARDS 27</span><span>THE BEAUTIFUL GAME, YOUR WAY.</span><span>© 2027 CLUB EDITION</span></footer>
+      </section>
+      <section class="view" id="view-packs"><div class="page-heading"><div><span class="eyebrow muted">YOUR NEXT STAR IS IN HERE</span><h1>THE <em>PACK ROOM</em></h1><p>Every pack is a new beginning. What will you find?</p></div><div class="pack-counter"><strong id="pack-total-small">0</strong><span>PACKS OPENED</span></div></div><div class="pack-feature"><div class="pack-showcase"><div class="pack-rays"></div><div class="pack-object"><span>UC</span><b>27</b><i>✦</i></div><div class="pack-orb orb-a"></div><div class="pack-orb orb-b"></div></div><div class="pack-info"><span class="rarity-pill">✦ &nbsp; LIMITED DROP</span><h2>CLUB<br><em>LEGENDS</em></h2><p>A hand-picked mix of rising talent and all-time greats. Five players, one shot at a legend.</p><div class="pack-details"><span><b>5</b> PLAYERS</span><span><b>75+</b> RATING</span><span><b>1</b> GUARANTEED RARE</span></div><button class="button primary pack-open" id="open-pack">OPEN PACK <span class="cost">◆ 500</span></button><span class="free-note">Your first pack is on us. Good luck, boss.</span></div></div><div class="pack-history"><div><span class="eyebrow muted">THE ODDS ARE IN YOUR HANDS</span><h2>PACK CONTENTS</h2></div><div class="odds-row"><span>COMMON</span><div class="odds-track"><i style="width:52%"></i></div><b>52%</b></div><div class="odds-row"><span>RARE</span><div class="odds-track"><i style="width:30%"></i></div><b>30%</b></div><div class="odds-row"><span>ELITE</span><div class="odds-track"><i style="width:14%"></i></div><b>14%</b></div><div class="odds-row"><span>ICON</span><div class="odds-track"><i style="width:4%"></i></div><b>4%</b></div></div></section>
+      <section class="view" id="view-draft"><div class="page-heading draft-header"><div><span class="eyebrow muted">PICK YOUR PERFECT XI (WELL, FIVE)</span><h1>THE <em>SQUAD DRAFT</em></h1><p>Choose one player at each position to build your dream five.</p></div><div class="draft-best"><span>BEST DRAFT</span><strong id="draft-best-rating">—</strong></div></div><div id="draft-area"><div class="draft-intro"><div class="draft-ball">⚽</div><h2>THE NEXT GREAT XI STARTS HERE.</h2><p>Five positions. Three choices each. Build the best squad you can.</p><button class="button primary" id="start-draft">START YOUR DRAFT <span>→</span></button></div></div></section>
+      <section class="view" id="view-club"><div class="page-heading club-heading"><div><span class="eyebrow muted">ALL YOUR FAVOURITES, IN ONE PLACE</span><h1>MY <em>CLUB</em></h1><p>Your collection is getting stronger. Keep building.</p></div><div class="club-total"><strong id="club-total">0</strong><span>PLAYERS</span></div></div><div class="collection-toolbar"><div class="collection-tabs"><button class="filter active" data-filter="all">ALL PLAYERS <span id="all-count">0</span></button><button class="filter" data-filter="rare">RARE + <span id="rare-count">0</span></button></div><select id="sort-players" aria-label="Sort players"><option value="rating">SORT: RATING</option><option value="name">SORT: NAME</option><option value="position">SORT: POSITION</option></select></div><div id="collection-grid" class="collection-grid"></div><div id="empty-collection" class="empty-state"><div>▧</div><h2>YOUR CLUB IS WAITING.</h2><p>Open your first pack and start collecting players.</p><button class="button primary" data-goto="packs">FIND YOUR FIRST STAR ↗</button></div></section>
+    </main>
+  </div>
+  <div class="modal-backdrop" id="pack-modal" aria-hidden="true"><div class="modal-content"><button class="modal-close" id="close-modal" aria-label="Close">×</button><div class="modal-top"><span class="eyebrow">CLUB LEGENDS PACK</span><h2 id="reveal-title">A NEW STAR IS BORN</h2><p id="reveal-subtitle">Tap each card to reveal your players.</p></div><div id="reveal-cards" class="reveal-cards"></div><div class="modal-actions"><button class="button primary" id="reveal-next">REVEAL NEXT CARD <span>→</span></button><button class="button ghost hidden" id="reveal-done">ADD TO MY CLUB ✓</button></div></div></div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="game.js"></script>
+</body>
+</html>
